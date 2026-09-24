@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crumb Culture — Artisan Bakery in Portland, OR</title>
+  <meta name="description" content="Crumb Culture is a neighborhood bakery in Portland, Oregon serving sourdough, croissants, and seasonal pastries baked fresh every morning." />
+  <meta name="author" content="Crumb Culture Bakery" />
+  <meta name="theme-color" content="#3b2417" />
+  <meta property="og:title" content="Crumb Culture — Artisan Bakery" />
+  <meta property="og:description" content="Sourdough, croissants, and seasonal pastries baked fresh every morning in Portland, OR." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509442257570-2dd2d8a5e5e9?w=1200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#fdf6ec',
+            wheat: '#f3e4c7',
+            crust: '#c98a3a',
+            caramel: '#a4632a',
+            cocoa: '#3b2417',
+            espresso: '#1f120a',
+            sage: '#7a8b6f'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-cocoa font-sans antialiased">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-cocoa focus:text-cream focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+
+  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur border-b border-cocoa/10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Primary">
+      <div class="flex items-center justify-between h-16">
+        <a href="#top" class="flex items-center gap-2 font-display text-2xl font-bold text-cocoa">
+          <span aria-hidden="true" class="text-3xl">🥐</span>
+          Crumb Culture
+        </a>
+        <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-cocoa/80">
+          <li><a href="#about" class="hover:text-caramel transition">Our Story</a></li>
+          <li><a href="#menu" class="hover:text-caramel transition">Menu</a></li>
+          <li><a href="#location" class="hover:text-caramel transition">Visit Us</a></li>
+          <li><a href="#contact" class="hover:text-caramel transition">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <a href="#menu" class="hidden sm:inline-block btn-primary text-sm">Order Ahead</a>
+          <button id="menu-toggle" class="md:hidden p-2 rounded hover:bg-wheat" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <ul class="flex flex-col gap-2 text-cocoa/90 font-medium">
+          <li><a href="#about" class="block py-2 hover:text-caramel">Our Story</a></li>
+          <li><a href="#menu" class="block py-2 hover:text-caramel">Menu</a></li>
+          <li><a href="#location" class="block py-2 hover:text-caramel">Visit Us</a></li>
+          <li><a href="#contact" class="block py-2 hover:text-caramel">Contact</a></li>
+          <li><a href="#menu" class="btn-primary inline-block mt-2 text-sm">Order Ahead</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10">
+        <img src="https://images.unsplash.com/photo-1509442257570-2dd2d8a5e5e9?auto=format&fit=crop&w=1600&q=80"
+             alt="Freshly baked sourdough loaves on a rustic wooden table"
+             class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-espresso/85 via-cocoa/60 to-cocoa/20"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 lg:py-44">
+        <div class="max-w-2xl">
+          <p class="text-wheat tracking-[0.3em] uppercase text-xs md:text-sm font-semibold mb-4">Est. 2014 · Portland, OR</p>
+          <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold text-cream leading-tight">
+            Bread that tells a story.
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-cream/90 leading-relaxed">
+            Crumb Culture is a neighborhood bakery where slow-fermented sourdough, buttery croissants, and seasonal pastries are baked fresh every morning — because good bread takes time.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a href="#menu" class="btn-primary">Explore the Menu</a>
+            <a href="#location" class="btn-ghost">Find Our Bakery</a>
+          </div>
+          <div class="mt-12 flex items-center gap-6 text-cream/80 text-sm">
+            <div class="flex items-center gap-2"><span aria-hidden="true">⭐</span> 4.9 · 1,200+ reviews</div>
+            <div class="flex items-center gap-2"><span aria-hidden="true">🌾</span> 100% organic flour</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 md:py-28 bg-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1555503081-9e68d37cd8c6?auto=format&fit=crop&w=1000&q=80"
+                 alt="Baker shaping dough by hand in the Crumb Culture kitchen"
+                 class="rounded-2xl shadow-2xl w-full h-[420px] object-cover" loading="lazy" />
+            <div class="absolute -bottom-6 -right-4 md:-right-8 bg-cocoa text-cream rounded-xl px-6 py-4 shadow-xl">
+              <p class="font-display text-3xl font-bold">10+</p>
+              <p class="text-xs uppercase tracking-widest text-wheat">Years of craft</p>
+            </div>
+          </div>
+          <div>
+            <p class="text-caramel font-semibold tracking-widest uppercase text-xs mb-3">Our Story</p>
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-cocoa leading-tight">
+              A bakery built on patience, flour, and community.
+            </h2>
+            <p class="mt-6 text-cocoa/80 text-lg leading-relaxed">
+              Crumb Culture began in 2014 with a single stone hearth oven and a stubborn belief: great bread can't be rushed. A decade later, we still ferment our sourdough for 36 hours, still mill our rye in-house, and still greet every regular by name.
+            </p>
+            <p class="mt-4 text-cocoa/80 text-lg leading-relaxed">
+              We source organic flour from small Pacific Northwest mills, partner with local farms for our butter and eggs, and bake everything from scratch — no shortcuts, no preservatives, no compromises.
+            </p>
+            <ul class="mt-8 grid grid-cols-2 gap-4">
+              <li class="flex items-start gap-3">
+                <span class="text-caramel text-xl" aria-hidden="true">🌾</span>
+                <div><p class="font-semibold">Organic & Local</p><p class="text-sm text-cocoa/70">Flour milled within 200 miles</p></div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-caramel text-xl" aria-hidden="true">⏳</span>
+                <div><p class="font-semibold">Slow Fermented</p><p class="text-sm text-cocoa/70">36-hour cold proof</p></div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-caramel text-xl" aria-hidden="true">🤝</span>
+                <div><p class="font-semibold">Community First</p><p class="text-sm text-cocoa/70">Donates 5% to local food banks</p></div>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-caramel text-xl" aria-hidden="true">♻️</span>
+                <div><p class="font-semibold">Zero Waste</p><p class="text-sm text-cocoa/70">Day-old bread composted daily</p></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="py-20 md:py-28 bg-wheat/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <p class="text-caramel font-semibold tracking-widest uppercase text-xs mb-3">The Menu</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-cocoa">Signature Baked Goods</h2>
+          <p class="mt-4 text-cocoa/70 text-lg">Baked fresh every morning. Sold until they're gone — usually by 2pm.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1586444248902-2f6481b9d094?auto=format&fit=crop&w=800&q=80" alt="Rustic sourdough loaf with a crackled crust" class="menu-img" loading="lazy" />
+            <div class="p-6">
+              <div class="flex items-start justify-between gap-3">
+                <h3 class="font-display text-2xl font-bold text-cocoa">Country Sourdough</h3>
+                <span class="price">$8.50</span>
+              </div>
+              <p class="mt-2 text-cocoa/70 text-sm leading-relaxed">Our flagship loaf — 36-hour cold ferment, blistered crust, open crumb. Baked twice daily.</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1555503081-9e68d37cd8c6?auto=format&fit=crop&w=800&q=80" alt="Golden butter croissant with flaky layers" class="menu-img" loading="lazy" />
+            <div class="p-6">
+              <div class="flex items-start justify-between gap-3">
+                <h3 class="font-display text-2xl font-bold text-cocoa">Butter Croissant</h3>
+                <span class="price">$4.25</span>
+              </div>
+              <p class="mt-2 text-cocoa/70 text-sm leading-relaxed">72 layers of French butter, laminated by hand. Available plain, almond, or chocolate.</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1509442257570-2dd2d8a5e5e9?auto=format&fit=crop&w=800&q=80" alt="Warm baguette with sesame seeds" class="menu-img" loading="lazy" />
+            <div class="p-6">
+              <div class="flex items-start justify-between gap-3">
+                <h3 class="font-display text-2xl font-bold text-cocoa">Sesame Baguette</h3>
+                <span class="price">$3.75</span>
+              </div>
+              <p class="mt-2 text-cocoa/70 text-sm leading-relaxed">Crisp crust, airy crumb, toasted sesame. Perfect with soup or a charcuterie board.</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d4ad05?auto=format&fit=crop&w=800&q=80" alt="Cinnamon roll with cream cheese frosting" class="menu-img" loading="lazy" />
+            <div class="p-6">
+              <div class="flex items-start justify-between gap-3">
+                <h3 class="font-display text-2xl font-bold text-cocoa">Cinnamon Roll</h3>
+                <span class="price">$5.50</span>
+              </div>
+              <p class="mt-2 text-cocoa/70 text-sm leading-relaxed">Brioche dough, Saigon cinnamon, house-made cream cheese frosting. Warm from the oven.</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1568254483544-104b92e7e6f4?auto=format&fit=crop&w=800&q=80" alt="Rustic focaccia with rosemary and olive oil" class="menu-img" loading="lazy" />
+            <div class="p-6">
+              <div class="flex items-start justify-between gap-3">
+                <h3 class="font-display text-2xl font-bold text-cocoa">Rosemary Focaccia</h3>
+                <span class="price">$6.00</span>
+              </div>
+              <p class="mt-2 text-cocoa/70 text-sm leading-relaxed">Olive oil-soaked, dimpled, and topped with fresh rosemary and flaky sea salt.</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Stack of seasonal fruit galette" class="menu-img" loading="lazy" />
+            <div class="p-6">
+              <div class="flex items-start justify-between gap-3">
+                <h3 class="font-display text-2xl font-bold text-cocoa">Seasonal Galette</h3>
+                <span class="price">$7.25</span>
+              </div>
+              <p class="mt-2 text-cocoa/70 text-sm leading-relaxed">Rustic free-form tart with whatever's ripest this week — peaches, plums, or stone fruit.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="#contact" class="btn-primary">Reserve Your Order</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="py-20 md:py-28 bg-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <p class="text-caramel font-semibold tracking-widest uppercase text-xs mb-3">Visit Us</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-cocoa">Come Say Hello</h2>
+          <p class="mt-4 text-cocoa/70 text-lg">We're in the heart of Alberta Arts District. Coffee's on us if you're early.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10">
+          <div class="space-y-6">
+            <div class="rounded-2xl overflow-hidden shadow-lg border border-cocoa/10">
+              <iframe
+                title="Map showing Crumb Culture bakery location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.9!2d-122.69!3d45.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDMzJzM2LjAiTiAxMjLCsDQxJzI0LjAiVw!5e0!3m2!1sen!2sus!4v1"
+                width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="bg-wheat/60 rounded-xl p-6">
+                <h3 class="font-display text-xl font-bold text-cocoa mb-2 flex items-center gap-2"><span aria-hidden="true">📍</span> Address</h3>
+                <p class="text-cocoa/80 text-sm leading-relaxed">1234 SE Hawthorne Blvd<br/>Portland, OR 97214</p>
+              </div>
+              <div class="bg-wheat/60 rounded-xl p-6">
+                <h3 class="font-display text-xl font-bold text-cocoa mb-2 flex items-center gap-2"><span aria-hidden="true">🕐</span> Hours</h3>
+                <p class="text-cocoa/80 text-sm leading-relaxed">Mon–Fri: 7am – 3pm<br/>Sat–Sun: 8am – 4pm</p>
+              </div>
+              <div class="bg-wheat/60 rounded-xl p-6">
+                <h3 class="font-display text-xl font-bold text-cocoa mb-2 flex items-center gap-2"><span aria-hidden="true">📞</span> Phone</h3>
+                <p class="text-cocoa/80 text-sm leading-relaxed"><a href="tel:+15035551234" class="hover:text-caramel">(503) 555-1234</a></p>
+              </div>
+              <div class="bg-wheat/60 rounded-xl p-6">
+                <h3 class="font-display text-xl font-bold text-cocoa mb-2 flex items-center gap-2"><span aria-hidden="true">✉️</span> Email</h3>
+                <p class="text-cocoa/80 text-sm leading-relaxed"><a href="mailto:hello@crumbculture.com" class="hover:text-caramel">hello@crumbculture.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="contact" class="bg-cocoa text-cream rounded-2xl p-8 md:p-10 shadow-xl">
+            <h3 class="font-display text-3xl font-bold mb-2">Send Us a Message</h3>
+            <p class="text-cream/70 mb-6 text-sm">Catering, wholesale, or just a hello — we read every message.</p>
+            <form id="contact-form" class="space-y-4" novalidate>
+              <div>
+                <label for="name" class="block text-sm font-medium mb-1">Name</label>
+                <input id="name" name="name" type="text" required autocomplete="name"
+                       class="form-input" placeholder="Your name" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                <input id="email" name="email" type="email" required autocomplete="email"
+                       class="form-input" placeholder="you@example.com" />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                <textarea id="message" name="message" rows="4" required
+                          class="form-input resize-none" placeholder="Tell us what you need..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary w-full">Send Message</button>
+              <p id="form-status" class="text-sm text-center min-h-[1.25rem]" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-espresso text-cream/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <a href="#top" class="flex items-center gap-2 font-display text-2xl font-bold text-cream">
+            <span aria-hidden="true" class="text-3xl">🥐</span> Crumb Culture
+          </a>
+          <p class="mt-4 text-sm leading-relaxed max-w-sm">
+            A neighborhood bakery in Portland, Oregon. Slow-fermented sourdough, buttery pastries, and a warm welcome — since 2014.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-cream mb-3 text-sm uppercase tracking-widest">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#about" class="hover:text-wheat">Our Story</a></li>
+            <li><a href="#menu" class="hover:text-wheat">Menu</a></li>
+            <li><a href="#location" class="hover:text-wheat">Visit Us</a></li>
+            <li><a href="#contact" class="hover:text-wheat">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-cream mb-3 text-sm uppercase tracking-widest">Follow</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener" class="hover:text-wheat">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-wheat">Facebook</a></li>
+            <li><a href="https://tiktok.com" target="_blank" rel="noopener" class="hover:text-wheat">TikTok</a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener" class="hover:text-wheat">Twitter / X</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-10 pt-6 border-t border-cream/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-cream/60">
+        <p>© <span id="year"></span> Crumb Culture Bakery. All rights reserved.</p>
+        <p>Baked with 🤍 in Portland, OR</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
